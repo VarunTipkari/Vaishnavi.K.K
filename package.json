@@ -1,0 +1,30 @@
+{
+  "name": "vaishnavi.k.k",
+  "version": "1.0.0",
+  "description": "",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server-backend\" \"npm run electron-dev\" \"npm run dev --prefix user-interface\"",
+  "electron-dev": "wait-on http://localhost:5173 && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VarunTipkari/Vaishnavi.K.K.git"
+  },
+  "keywords": [],
+  "author": "Varun Tipkari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VarunTipkari/Vaishnavi.K.K/issues"
+  },
+  "homepage": "https://github.com/VarunTipkari/Vaishnavi.K.K#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "electron": "^36.2.0",
+    "wait-on": "^8.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
