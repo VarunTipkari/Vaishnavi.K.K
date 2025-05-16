@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "electron/main.js",
+  "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix server-backend\" \"npm run electron-dev\" \"npm run dev --prefix user-interface\"",
   "electron-dev": "wait-on http://localhost:5173 && electron .",

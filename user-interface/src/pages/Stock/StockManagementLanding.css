@@ -1,0 +1,181 @@
+/* Stock Landing Page Styles */
+.stock-landing-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8fafc;
+  padding: 1.5rem;
+}
+
+/* Header Styles */
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.breadcrumb-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-link:hover {
+  color: #1e40af;
+}
+
+.breadcrumb-current {
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.breadcrumb-separator {
+  color: #9ca3af;
+}
+
+.header-time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+/* Main Content */
+.stock-landing-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.page-title h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.title-icon {
+  color: #16a34a;
+}
+
+/* Category Grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.category-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-icon.fertilizer {
+  background-color: rgba(22, 163, 74, 0.1);
+  color: #16a34a;
+}
+
+.card-icon.pesticide {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+.card-icon.seed {
+  background-color: rgba(234, 179, 8, 0.1);
+  color: #eab308;
+}
+
+.category-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .stock-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .page-title {
+    margin-bottom: 2rem;
+  }
+  
+  .category-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stock-landing-container {
+    padding: 1rem;
+  }
+  
+  .page-title {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .page-title h1 {
+    font-size: 1.5rem;
+  }
+}
