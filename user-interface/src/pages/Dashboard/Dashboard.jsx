@@ -78,7 +78,7 @@ const Dashboard = () => {
           </div>
 
           {/* Accounts Card */}
-          <div className="nav-card" onClick={() => console.log('Navigate to Accounts')}>
+          <div className="nav-card" onClick={() => navigate('/Account')}>
             <div className="card-icon" style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)' }}>
               <BookOpen size={32} color="#3b82f6" />
             </div>

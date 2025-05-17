@@ -1,4 +1,9 @@
 /* Stock Management Page Styles */
+.main-container {
+    height: 100vh;
+  background-color: #f8fafc;
+  padding: 1.5rem;
+}
 .stock-management-container {
   display: flex;
   flex-direction: column;
@@ -73,7 +78,11 @@
   color: #16a34a;
 }
 
-.add-stock-btn {
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+.stock-btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;

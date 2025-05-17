@@ -83,7 +83,7 @@
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   background-color: var(--agri-green-50);
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   color: var(--agri-green-800);
   font-weight: 500;
 }
@@ -93,10 +93,10 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: none;
-  border: none;
-  border-radius: 2rem;
-  color: var(--text-secondary);
+  background-color: var(--agri-green-50);
+  border-radius: 0.5rem;
+  color: rgb(199, 48, 48);
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
 }

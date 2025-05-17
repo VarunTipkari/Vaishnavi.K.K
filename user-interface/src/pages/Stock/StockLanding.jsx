@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Home, ChevronRight, Clock, Warehouse, Leaf, Bug } from 'lucide-react';
-import './StockManagementLanding.css';
+import './Styling/StockManagementLanding.css';
 import { useNavigate } from 'react-router-dom';
 
 const StockManagementLanding = () => {

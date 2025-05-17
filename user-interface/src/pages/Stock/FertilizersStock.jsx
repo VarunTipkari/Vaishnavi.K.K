@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Home, ChevronRight, Clock, Plus, Warehouse } from 'lucide-react';
-import './FertStock.css';
+import './Styling/FertStock.css';
 import { useNavigate } from 'react-router-dom';
 
 const FertilizersStock = () => {
@@ -81,10 +81,20 @@ const FertilizersStock = () => {
           <Warehouse size={24} className="title-icon" />
           Fertilizer Stock
         </h1>
-        <button className="add-stock-btn" onClick={handleAddStock}>
+        <div className='buttons'>
+          <button className="stock-btn" onClick={handleAddStock}>
           <Plus size={18} />
           <span>Add Stock</span>
         </button>
+         <button className="stock-btn" onClick={()=>navigate('/UpdateStock')}>
+          <Plus size={18} />
+          <span>Update Stock</span>
+        </button>
+         <button className="stock-btn" onClick={handleAddStock}>
+          <Plus size={18} />
+          <span>Delete Stock</span>
+        </button>
+        </div>
       </div>
 
       {/* Stock Cards Grid */}

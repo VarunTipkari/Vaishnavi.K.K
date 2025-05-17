@@ -8,6 +8,9 @@ import Dashboard from './pages/Dashboard/Dashboard'
 import FertilizersStock from './pages/Stock/FertilizersStock';
 import StockManagementLanding from './pages/Stock/StockLanding';
 import FertStockReport from './pages/Stock/FertStockReport';
+import UpdateStock from './pages/Stock/UpdateStock';
+import AccountsPage from './pages/Accounts/AccountsPage';
+import BalanceSheet from './pages/Accounts/BalanceSheet';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
       <Route path='/Fertilizers' element={<FertilizersStock/>}></Route>
       <Route path='/Stock' element={<StockManagementLanding/>}></Route>
       <Route path='/FertReport' element={<FertStockReport/>}></Route>
+      <Route path='/UpdateStock' element={<UpdateStock/>}></Route>
+      <Route path='/Account' element={<AccountsPage/>}></Route>
+      <Route path='/BalanceSheet' element={<BalanceSheet/>}></Route>
 
     </Routes>
     </BrowserRouter>

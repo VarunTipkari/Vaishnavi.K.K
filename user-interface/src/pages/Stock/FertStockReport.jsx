@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Home, ChevronRight, Clock, Printer, Warehouse } from 'lucide-react';
-import './FertStockReport.css';
+import './Styling/FertStockReport.css';
 
 const FertStockReport = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
